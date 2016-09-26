@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/*my*/
+#my{background: #D8E6EF}
+#my .mt110 input,#my_registered .mt220 input,#my_forget input,#my_password input{width: 5rem;padding-left: 0.6rem;border: 1px solid #666;border-radius: 0.9rem;}
+#my .my_item{width:5.6rem;margin:0 auto;margin-top: 0.4rem!important}
+#my .my_btn,#my_registered .my_btn,#my_forget .my_btn,#my_password .my_btn{width: 2rem;border-radius: 0.8rem;background: #22C7BC; }
+#my .my_mar{margin: 0 1.43rem;}
+fieldset{border-top: 1px solid #666;width: 5.6rem;margin: 0 auto}
+/*my_registered*/
+#my_registered .my_resbtn,#my_forget .my_resbtn,#my_password .my_resbtn{width: 1rem;line-height: 0.8rem;background: #22C7BC;position: absolute;margin-left: -1.05rem;border-radius: 0.8rem;margin-top: 0.068rem}
+/*my_index*/
+#my_index header{background: url(../images/my/my_bg.png) no-repeat;background-size: 100%;height: 4.56rem!important;position: static;}
+#my_index .header_r img{height: 0.6rem!important;}
+#my_index .my_inhead{width: 1.6rem;height: 1.6rem;border-radius: 100%;border: 1px solid #fff;margin: 0 auto;}
+#my_index .my_inh{width: 1.45rem;height: 1.45rem;border-radius: 100%;background: #fff;margin-top: 0.075rem;margin-left: 0.01rem;}
+#my_index .my_inh img{width: 1.4rem;height: 1.4rem;border-radius: 100%;margin-top: 0.025rem;}
+#my_index header ul{height: 0.93rem;width: 100%;background: rgba(0,0,0,0.5);margin-top: 0.15rem;}
+#my_index header ul li{width: 49%;display: inline-block;height: 0.37rem;padding: 0.28rem 0;}
+#my_index header ul li div{border-right: 1px solid #fff;}
+#my_index header ul li p:first-child{padding-bottom: 0.42rem}
+#my_index main ul li{width: 2.2rem;height: 1.85rem;border-radius: 0.1rem;background: #fff;padding: 0.5rem 0 0.45rem 0;margin-right: 0.2rem;display: inline-block;margin-bottom: 0.4rem}
+#my_index main ul li img{height: 0.73rem}
+/*my_inforsax*/
+#my_inforsax .radio_input{background: #fff;margin-top: -0.25rem}
+#my_inforsax .radio_on{background: url(../images/my/my_yes.png) no-repeat;background-size: 100%;}
+/*my_inforQR*/
+#my_inforQR main img{width: 5rem;height: 5rem;}
+/*my_horn*/
+#my_horn main,#my_bill main{background: url(../images/my/horn_bg.png) no-repeat;background-size: 100%;position: absolute;top: 0.88rem;bottom: 0;left:0;right: 0;}
+#my_horn main i{width: 2.14rem;height: 2.14rem;border-radius: 100%;background: #24BFD2;display: inline-block;margin-top: 0.5rem}
+#my_horn main i img{width: 2.1rem;height: 2.1rem;border-radius: 100%;margin-top: 0.01rem;margin-left: 0.01rem}
+#my_horn main ul li{width: 4rem;line-height: 0.73rem;border-radius: 0.73rem;border: 1px solid #9399BD;}
+#my_horn main ul li p{color: #9399BD;}
+#my_horn main ul li p span{color: #666699}
+/*my_horndis*/
+#my_horndis main .my_horndisround{width: 1.4rem;height: 1.4rem;border-radius: 100%;background: #eee;z-index: 11}
+#my_horndis main i{width: 1rem;height: 1rem;border-radius: 100%;background: #24BFD2;margin-top: 0.24rem;margin-left: 0.24rem}
+#my_horndis main i img{width: 0.95rem;height: 0.95rem;border-radius: 100%;margin-top: 0.015rem;margin-left: 0.015rem}
+#my_horndis main div.radius10{margin-left: -0.6rem;padding: 0.24rem 0;width:6.4rem;}
+#my_horndis main div.radius10 img{width: 0.73rem;height: 0.73rem;border-radius: 100%;margin-left: 0.1rem}
+#my_horndis main li{margin-bottom: 2.5rem}
+/*my_made*/
+#my_made section.r,#my_buy section.r,#my_browse section.r,#my_collect section.r{width: 1.6rem;background: #E8323B}
+/*my_news*/
+#my_news h1{width: 49.5%;line-height: 0.8rem;text-align: center;}
+#my_news h1 p{width: 2rem;}
+#my_news h1:first-child{border-right:1px solid #ccc;}
+/*my_bill*/
+#my_bill ul li{color: #669}
+/*my_about*/
+/*banner*/
+.main_visual{width: 100%;height: 3.9rem;}
+.main_image {width:100%; height: 3.9rem; border-top:1px solid #d7d7d7; overflow:hidden; margin:0 auto; position:relative}
+.main_image ul{width: 100%;height: 3.9rem;position: absolute;left: 0;}
+.main_image li{display: inline-block;white-space: nowrap;/*强制不还换*/width: 100%;height: 3.9rem;}
+.main_image li span,.main_image li span img{width: 100%;height: 3.8rem;}
+.flicking_con{position: relative;}
+.flicking_inner{position: absolute;right: 0.02rem;top: -0.4rem;}
+.flicking_con a {width: 0.14rem;height: 0.14rem;border-radius: 100%;background:#eee;display: inline-block;margin-right: 0.22rem;}
+.flicking_con a.on{background: #22C7BC;}
+/*main*/
+#my_about main ul li{width:3.4rem;height:3.4rem;border-radius:0.1rem;margin-left:0.23rem;float: left;margin-bottom: 0.2rem}
+#my_about main ul li:nth-child(1) img{width: 1.2rem;margin: 0.6rem 0 0 0.6rem;}
+#my_about main ul li:nth-child(2) img{width: 1.2rem;margin: 0.6rem 0 0 1.5rem;}
+#my_about main ul li:nth-child(3) img{width: 1.2rem;margin: 1.5rem 0 0 0.6rem;}
+#my_about main ul li:nth-child(4) img{width: 1.2rem;margin: 1.5rem 0 0 1.5rem;}
+#my_about main ul li:nth-child(1) p{transform:rotate(-45deg) translate(0.2rem,-0.1rem)}
+#my_about main ul li:nth-child(2) p{transform:rotate(45deg) translate(-0.1rem,0.1rem)}
+#my_about main ul li:nth-child(3) p{transform:rotate(45deg) translate(1.3rem,1rem)}
+#my_about main ul li:nth-child(4) p{transform:rotate(-45deg) translate(-1.3rem,1rem)}
+#my_about main aside{width: 3.8rem;height: 3.8rem;border-radius: 100%;background: #eee;margin:1.5rem 0 0 1.8rem;}
+#my_about .my_aboutbuil{width: 3.4rem;height: 3.4rem;border-radius: 100%;background: #EFFAF9;margin: 0.2rem 0 0 0.2rem}
+#my_about .my_aboutbuil img{width: 1.2rem;height: 1.38rem;padding-top: 0.74rem}
+/*my_setmy*/
+#my_setmy .mt88 section.auto,#my_setbuil .mt88 section.auto{width: 2rem;height: 1.6rem;border: 1px solid #24BFD2}
+/*map*/
+#map section{bottom:0.5rem;z-index: 99999;left: 0.24rem;box-shadow:0 0 0.2rem #000;}
+.coll_icon img{height: 0.5rem;position: relative;top: 5rem;left: 3rem;z-index: 99999;}
+#iCenter{float:left;position: absolute;top: 0.88rem;bottom: 0;left: 0;right: 0;width: 100%}
+#iControlbox{float:left;width:200px;height:580px;background:#ccc;font-size:0.28rem;}
+#result{font-size:0.28rem;width:300px;float:left;}
+.markerContentStyle span{padding:2px;border:1px solid #000;font-size:10px;background:#fff;white-space:nowrap;}
+/* 定义自定义信息窗体样式 */
+div.info {position: relative;z-index: 100;border: 1px solid #BCBCBC;box-shadow: 0 0 10px;#B7B6B6;border-radius: 8px;background-color: rgba(255,255,255,0.9);transition-duration: 0.25s;}
+div.info:hover {box-shadow: 0px 0px 15px #0CF;}
+div.info-top {position: relative;background: none repeat scroll 0 0 #F9F9F9;border-bottom: 1px solid #CCC;border-radius:5px 5px 0 0;}
+div.info-top div {display: inline-block;color: #333333;font-size:14px;font-weight:bold; line-height:31px;padding:0 10px;}
+div.info-top img {position: absolute;top: 10px;right: 10px;transition-duration: 0.25s;}
+div.info-top img:hover{box-shadow: 0px 0px 5px #000;}
+div.info-middle {font-size:0.28rem;padding:10px;line-height:21px;}
+div.info-bottom {height:0px;width:100%;clear:both;text-align:center;}
+div.info-bottom img{position: relative;z-index:104;}
+.autoclass{width:7rem;clear:both;position:fixed;z-index:999999;margin-left: 0.25rem;}
+.autoclass img{height: 0.25rem;position: absolute;margin-left: 0.18rem;margin-top: 0.2rem}
+.autobox{overflow: auto; width: 95%; border: 1px solid gray;display: none;background:#fff;}
+.coll_search{box-shadow:0 0 0.1rem #000;line-height: 0.6rem;border-radius: 0.6rem;padding-left: 0.5rem;width: 6.5rem}
+/* 从这里出发|到这里去|搜周边 */
+.iWindow{width:2.9rem;padding:0.05rem;font-size:0.28rem;}
+.iBox{border:1px solid #ccc;margin:10px 0 0;width:2.9rem;}
+.iBox ul {margin:0;padding:0;}
+.iBox ul li{float:left;width:96px;margin:0;list-style:none;border-bottom:1px solid #ccc;}
+.iBox ul li a{height:20px;line-height:20px;float:left;color:#333;text-decoration:none;width:0.98rem;text-align:center;background:#eee;}
+.iBox ul li a:hover{background:#fff;font-weight:800;}
+#box1,#box2,#box3{display:none;clear:both;padding:5px;}
+.iWindow input,.iWindow button{margin:0;}
+.iWindow input{width:1.3rem;}
+#box3 a{margin:0 0.05rem 0 0;}
+#box3 img{border: 1px solid #ccc;padding: 0.02rem;vertical-align: bottom;}
+/*my_spending*/
+#my_spending .my_spendingheader{height: 2.64rem;background: url(../images/my/my_select.png) no-repeat;background-size: 100%;}
+/*my_view*/
+#my_view input{margin-bottom: 0.3rem;font-size: 0.32rem;padding: 0.2rem 0;height: 0.5rem;text-indent: 0.5em;}
+#my_view textarea{text-indent: 0.5em;}

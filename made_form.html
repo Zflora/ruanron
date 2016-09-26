@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<title>ru@n软融</title>
+</head>
+<body id="made_form" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <a class="header_l" onclick="javascript:history.back(-1); "><img src="images/index/header_l.png" alt=""></a>
+        <span class="f40">定制表单</span>
+    </header>
+    <!-- header_end -->
+   <main class="mt128">
+       <section class="lh80 mb60">
+            <span class="f32 mr24 pl24 dib">您定制的项目是</span>
+            <p class="f32 g3cc select radius10 pl45" id="select">LOGO设计</p>
+            <ul class="dn radius10" id="select_list">
+              <li class="f32 g3">LOGO设计</li>
+              <li class="f32 g3">域名申请</li>
+              <li class="f32 g3">微商城开发</li>   
+              <li class="f32 g3">APP开发</li> 
+            </ul>
+       </section>
+       <section class="p0_24 mb60"><p class="f32 tc lh60">请准确填写下面的信息，五个工作日之内我们的工作人员将与你取得联系！</p></section>
+       <section class="p0_24 f32 mb44">
+            <input type="text" class="pl5 bgwh radius10 pct99" placeholder="公司全称">
+            <input type="text" class="pl5 bgwh radius10 pct99" placeholder="姓名">
+            <input type="tel" class="pl5 bgwh radius10 pct99" placeholder="手机号">
+            <input type="text" class="pl5 bgwh radius10 pct99" placeholder="邮箱">
+            <input type="text" class="pl5 bgwh radius10 pct99" placeholder="公司地址">
+            <textarea name="" class="pct99 pl5 bgwh radius10 lh60" cols="30" rows="4" placeholder="你还有什么不明白的地方？请在此描述你想咨 询的问题。"></textarea>
+       </section>
+       <section class="p0_24 mb110">
+           <input type="radio" class="radio_input radio">
+           <span class="f28 g9 vt ml10" onclick="javascript:window.location.href='made_formnews.html','_self'">我已经查看定制须知</span>
+       </section>
+       <section class="tc mb35" onclick="javascript:history.back(-1); ">
+            <a class="f32 wh btn lh80">提交</a>
+        </section>
+   </main>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+$(function(){
+  // 类型
+  $("#select").click(function(){
+    $("#select_list").toggle();      
+  })
+  $("#select_list li").click(function(){
+        $("#select").html($(this).html());
+        $("#select_list").hide();
+      })
+
+
+    $("input[type='radio']").click(function(){ 
+    if($(this).hasClass("radio_on")){ 
+            $(this).removeClass("radio_on"); 
+        }else{ 
+            $(this).addClass("radio_on"); 
+        } 
+    })
+})
+</script>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/my.css" rel="stylesheet" type="text/css">
+<title>ru@n软融</title>
+</head>
+<body id="my_infor" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <a class="header_l" onclick="javascript:history.back(-1); "><img src="images/index/header_l.png" alt=""></a>
+        <span class="f40">个人信息</span>
+    </header>
+    <!-- header_end -->
+    <main class="mt88 bgwh">
+        <ul>
+            <li class="pl24 pt24">
+                <label for="up_img" class="dib pct99">
+                    <label for="up_img" class="dib" id="imgdiv"><img src="images/head.png" id="imgShow" alt="" class="w110h110 mt10"></label>
+                    <div class="righticon dib mt5">
+                        <i class="dib h30 ml10 mt40"><img src="images/right.png" class="h30" alt="" class=""></i>
+                    </div>
+                    <input type="file" id="up_img" class="dn" />
+                </label>                
+                <hr class="mt24">
+            </li>
+            <li class="pl24 " onclick="javascript:window.location.href='my_inforname.html','_self'">
+                <p class="f32 dib lh90">姓名</p>
+                <input readonly type="text" class="r g9 f30 mt28 tr mr60 " value="暮雨泽">
+                <div class="righticon dib mt30">
+                    <i class="dib h30 ml10"><img src="images/right.png" class="h30" alt="" class=""></i>
+                </div>
+                <hr class="">
+            </li>
+            <li class="pl24 " onclick="javascript:window.location.href='my_inforsax.html','_self'">
+                <p class="f32 dib lh90">性别</p>
+                <input readonly type="text" class="r g9 f30 mt28 tr mr60 " value="男">
+                <div class="righticon dib mt30">
+                    <i class="dib h30 ml10"><img src="images/right.png" class="h30" alt="" class=""></i>
+                </div>
+                <hr class="">
+            </li>
+            <li class="pl24 " onclick="javascript:window.location.href='my_inforphone.html','_self'">
+                <p class="f32 dib lh90">手机号</p>
+                <input readonly type="tel" class="r g9 f30 mt28 tr mr60 " value="17788698324">
+                <div class="righticon dib mt30">
+                    <i class="dib h30 ml10"><img src="images/right.png" class="h30" alt="" class=""></i>
+                </div>
+                <hr class="">
+            </li>
+            <li class="pl24 " onclick="javascript:window.location.href='my_informail.html','_self'">
+                <p class="f32 dib lh90">邮箱</p>
+                <input readonly type="text" class="r g9 f30 mt28 tr mr60 " value="uichian@126.com">
+                <div class="righticon dib mt30">
+                    <i class="dib h30 ml10"><img src="images/right.png" class="h30" alt="" class=""></i>
+                </div>
+                <hr class="">
+            </li>
+            <li class="pl24 " onclick="javascript:window.location.href='my_inforQR.html','_self'">
+                <p class="f32 dib lh90">我的二维码</p>
+                <div class="righticon dib mt30">
+                    <i class="dib h30 ml10"><img src="images/right.png" class="h30" alt="" class=""></i>
+                </div>
+                <hr class="">
+            </li>
+            <li class="pl24 " onclick="javascript:window.location.href='firmorder_bill.html','_self'">
+                <p class="f32 dib lh90">我的发票信息</p>
+                <div class="righticon dib mt30">
+                    <i class="dib h30 ml10"><img src="images/right.png" class="h30" alt="" class=""></i>
+                </div>
+            </li>
+        </ul>        
+    </main>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!-- 图片预览 -->
+<script type="text/javascript" src="js/uploadPreview.js"></script>
+<script type="text/javascript">
+$(function(){
+    // 图片预览
+    window.onload = function () { 
+            new uploadPreview({ UpBtn: "up_img", DivShow: "imgdiv", ImgShow: "imgShow" });
+        }
+})
+</script>
+</html>

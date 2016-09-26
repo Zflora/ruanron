@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/my.css" rel="stylesheet" type="text/css">
+<title>ru@n软融</title>
+</head>
+<body id="my_about" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <a class="header_l" onclick="javascript:history.back(-1); "><img src="images/index/header_l.png" alt=""></a>
+        <span class="f40">关于我们</span>
+    </header>
+    <!-- header_end -->
+    <!-- banner -->
+    <aside class="main_visual mb35 mt88">
+        <div class="main_image">
+            <ul>                    
+                <li><span ><img src="images/banner (1).png" alt="" /></span></li>
+                <li><span ><img src="images/banner (2).png" alt="" /></span></li>
+                <li><span ><img src="images/banner (3).png" alt="" /></span></li>
+            </ul>
+            <a href="javascript:;" id="btn_prev"></a>
+            <a href="javascript:;" id="btn_next"></a>
+        </div>
+        <div class="flicking_con">
+            <div class="flicking_inner">
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+        </div>
+    </aside>
+    <!-- banner_end -->
+    <main>
+        <ul>
+            <li class="bgwh" onclick="javascript:window.location.href='team_made.html','_self'">
+                <img src="images/my/team.png">
+                <p class="f24 tc">团队建设</p>
+            </li>
+            <li class="bgwh" onclick="javascript:window.location.href='my_bus.html','_self'">
+                <img src="images/my/bus.png">
+                <p class="f24 tc">合作伙伴</p>
+            </li>
+            <li class="bgwh" onclick="javascript:window.location.href='coll_us.html','_self'">                
+                <p class="f24 tc">联系我们</p>
+                <img src="images/my/phone.png">
+            </li>
+            <li class="bgwh" onclick="javascript:window.location.href='my_view.html','_self'">
+                <p class="f24 tc">意见反馈</p>
+                <img src="images/my/view.png">
+            </li>
+        </ul>
+        <aside class="abs" onclick="javascript:window.location.href='my_aboutinfor.html','_self'">
+            <section class="my_aboutbuil tc">
+                <img src="images/my/buil.png" alt="">
+                <p class="f32 mt35">企业介绍</p>
+            </section>
+        </aside>
+        
+    </main>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!-- banner -->
+<script type="text/javascript" src="js/jquery.event.drag-1.5.min.js"></script>
+<script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+<script type="text/javascript">
+$(function(){
+    //轮播开始
+    $dragBln = false;
+    $(".main_image").touchSlider({
+        flexible : true,
+        speed : 200,
+        btn_prev : $("#btn_prev"),
+        btn_next : $("#btn_next"),
+        paging : $(".flicking_con a"),
+        counter : function (e) {
+            $(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+        }
+    });
+    $(".main_image").bind("mousedown", function() {
+        $dragBln = false;
+    })
+    $(".main_image").bind("dragstart", function() {
+        $dragBln = true;
+    })
+    $(".main_image a").click(function() {
+        if($dragBln) {
+            return false;
+        }
+    })
+    timer = setInterval(function() { $("#btn_next").click();}, 3000);
+    $(".main_visual").hover(function() {
+        clearInterval(timer);
+    }, function() {
+        timer = setInterval(function() { $("#btn_next").click();}, 3000);
+    })
+    $(".main_image").bind("touchstart", function() {
+        clearInterval(timer);
+    }).bind("touchend", function() {
+        timer = setInterval(function() { $("#btn_next").click();}, 3000);
+    })
+    //轮播结束
+})
+</script>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+<link rel="stylesheet" href="css/style_v.css" media="screen" />
+<title>ru@n软融</title>
+</head>
+<body id="my_bus" class="">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <a class="header_l" onclick="javascript:history.back(-1); "><img src="images/index/header_l.png" alt=""></a>
+        <span class="f40">合作伙伴</span>
+    </header>
+    <!-- header_end -->
+    <section class="htmleaf-container mt88">
+        <div id="timeline">
+            <ul id="dates">
+                <li><a href="#1900" class="selected">1900.12</a></li>
+                <li><a href="#1930">1930.12</a></li>
+                <li><a href="#1944">1944.12</a></li>
+                <li><a href="#1950">1950.12</a></li>
+                <li><a href="#1971">1971.12</a></li>
+                <li><a href="#1977">1977.12</a></li>
+                <li><a href="#1989">1989.12</a></li>
+                <li><a href="#1999">1999.12</a></li>
+                <li><a href="#2001">2001.12</a></li>
+                <li><a href="#2011">2011.12</a></li>
+            </ul>
+            <ul id="issues">
+                <li id="1900" class="selected">
+                    <img src="images/1.png" width="256" height="256" />
+                    <h1>公司名称</h1>
+                    <p>aaaaaa</p>
+                </li>
+                <li id="1930">
+                    <img src="images/2.png" width="256" height="256" />
+                    <h1>公司名称</h1>
+                    <p>aaaaaaaliquam </p>
+                </li>
+                <li id="1944">
+                    <img src="images/3.png" width="256" height="256" />
+                    <h1>公司名称</h1>
+                    <p>aaaaaaaliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed </p>
+                </li>
+                <li id="1950">
+                    <img src="images/4.png" width="256" height="256" />
+                    <h1>公司名称</h1>
+                    <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscip</p>
+                </li>
+                <li id="1971">
+                    <img src="images/5.png" width="256" height="256" />
+                    <h1>公司名称</h1>
+                    <p>aaaaaaaliquam </p>
+                </li>
+                <li id="1977">
+                    <img src="images/6.png" width="256" height="256" />
+                    <h1>公司名称</h1>
+                    <p>aaaaaaaliquam eget </p>
+                </li>
+                <li id="1989">
+                    <img src="images/7.png" width="256" height="256" />
+                    <h1>公司名称</h1>
+                    <p>aaaaaaaliquam </p>
+                </li>
+                <li id="1999">
+                    <img src="images/8.png" width="256" height="256" />
+                    <h1>公司名称</h1>
+                    <p>aaaaaa</p>
+                </li>
+                <li id="2001">
+                    <img src="images/9.png" width="256" height="256" />
+                    <h1>公司名称</h1>
+                    <p>aaaaaa</p>
+                </li>
+                <li id="2011">
+                    <img src="images/10.png" width="256" height="256" />
+                    <h1>公司名称</h1>
+                    <p>aaaaaa</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+    <script src="js/jquery.timelinr-0.9.6.js"></script>
+    <script>
+        $(function(){
+            $().timelinr({
+                orientation:    'vertical',
+                issuesSpeed:    300,
+                datesSpeed:     100,
+                arrowKeys:      'true',
+                startAt:            3
+            })
+        });
+    </script>
+</html>

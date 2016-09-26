@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/*banner*/
+.main_visual{width: 100%;height: 3.9rem;}
+.main_image {width:100%; height: 3.9rem; border-top:1px solid #d7d7d7; overflow:hidden; margin:0 auto; position:relative}
+.main_image ul{width: 100%;height: 3.9rem;position: absolute;left: 0;}
+.main_image li{display: inline-block;white-space: nowrap;/*强制不还换*/width: 100%;height: 3.9rem;}
+.main_image li span,.main_image li span img{width: 100%;height: 3.8rem;}
+.flicking_con{position: relative;}
+.flicking_inner{position: absolute;right: 0.02rem;top: -0.4rem;}
+.flicking_con a {width: 0.14rem;height: 0.14rem;border-radius: 100%;background:#eee;display: inline-block;margin-right: 0.22rem;}
+.flicking_con a.on{background: #22C7BC;}
+/*nav*/
+#index nav{height: 2.2rem;background: #fff;}
+#index nav section{width: 1.71rem;height: 2.2rem;display: inline-block;text-align: center;border-radius: 0.1rem;}
+#index nav section:nth-child(1){color: #7DB07D}
+#index nav section:nth-child(2){color: #7ABDCD}
+#index nav section:nth-child(3){color: #B292CC}
+#index nav section:nth-child(4){color: #F8C874}
+/*hot*/
+#index .index_hot{width: 1.6rem;line-height: 0.6rem;margin-right: 0.4rem;}
+/*#class*/
+#class nav,#industry nav,#price nav{white-space:nowrap;overflow-x: scroll;overflow-y: hidden;}
+#class nav p,#industry nav p,#stage nav p,#price nav p{width: 0.9rem;margin-left: 0.3rem;margin-right: 0.23rem;text-align: center;line-height: 0.8rem;}
+#class main img,#industry main img,#stage main img,#price main img{height: 3.6rem;}
+#class .auto,#industry .auto,#stage .auto,#price .auto{background: rgba(51,51,51,0.5);text-align: center;width: 5rem;position: absolute;margin-top: -3rem;margin-left: 1.25rem}
+/*#stage*/
+#stage nav{padding:0 0.58rem;}
+#stage nav p{margin:0 0.58rem;}
+/*#orders_mainmore*/
+.circle{width: 1.5rem;height: 1.5rem;  position: absolute;border-radius: 50%;background: #22C7BC;right: 0.3rem;}
+.pie_left,.pie_right{width:1.5rem;height:1.5rem;position:absolute;top:0;left:0;}
+.left,.right{display:block;width:1.5rem;height:1.5rem;background:#ccc;border-radius:50%;position:absolute;top:0;left:0;}
+.pie_right,.right{clip:rect(0,auto,auto,0.8rem);}
+.pie_left,.left{clip:rect(0,0.8rem,auto,0);}
+.mask{width:1.35rem;height:1.35rem;border-radius: 50%;left: 0.07rem;top: 0.07rem;background: #FFF;position: absolute;text-align: center;}
+#orders_mainmore .orders_mainmore_pic img,
+#orders_mainmore_salebefore .orders_mainmore_pic img,
+#orders_mainmore_saleover .orders_mainmore_pic img{width: 1.76rem;height: 1.6rem;overflow: hidden;margin-right: 0.199rem;border-radius: 0.1rem;}
+#orders_mainmore footer{background: #F0F7F7;}
+#orders_mainmore footer input,
+#orders_mainmore_salebefore footer input,
+#orders_mainmore_saleover footer input{width: 4rem;line-height: 0.6rem;display: inline-block;border-radius: 0.6rem;padding-left:0.24rem; }
+#orders_mainmore .footer{position: fixed;bottom: 0;}
+#orders_mainmore .footer li{padding-top: 0.7rem;text-align: center;display: inline-block;}
+#orders_mainmore .footer li:nth-child(1){padding-left: 0.8rem;padding-right: 0.6rem;}
+#orders_mainmore .footer li:nth-child(2){padding:0 0.6rem;}
+#orders_mainmore .footer li:nth-child(3){padding-right: 0.8rem;padding-left: 0.6rem}
+#orders_mainmore .footer li img{height: 1.04rem;margin-bottom: 0.33rem}
+#orders_mainmore .footer>a{width: 2rem;line-height: 0.8rem;text-align: center;border-radius: 0.8rem;border:1px solid  #333;}
+/*#team_main*/
+#team_main .mt88 img{width: 100%;}
+#team_main .indent1{width: 4.2rem;text-align: justify;}
+#team_main .mt88 .pl24{margin-top: -3.15rem;margin-bottom: 0.9rem}
+#team_main main li{padding: 0.2rem 0 0 0.24rem}
+#team_main main li img{width: 2.1rem;height: 1.30rem;border-radius: 0.1rem;display: inline-block;}
+#team_main main li div{width: 4.92rem;}
+/*#firmorder*/
+#firmorder footer,#firmorder_bill footer{line-height: 1.1rem;}
+#firmorder footer p:first-child{width: 4.41rem;}
+#firmorder footer p:last-child{width: 3rem;background: #3cc}
+/*#firmorder_bill*/
+#firmorder_bill li>p{width: 0.73rem;line-height: 0.5rem;text-align: center;border-radius: 0.1rem ;border:1px solid #999;}
+#firmorder_bill li .top{position: absolute;margin-top: 0.25rem;}
+#firmorder_bill li .top:last-child{right:0.24rem;}
+/*firmorder_billnews*/
+.ui-switch {margin-top: 0.1rem;margin-right: 0.98rem;width: 0.98rem;height: 0.59rem;}
+.ui-switch input {width: 0.98rem;height: 0.59rem;position: absolute;z-index: 10;border: 0;background: 0 0;-webkit-appearance: none;outline: 0;}
+.ui-switch input:before {content: '';width: 0.95rem;height: 0.56rem;border: 1px solid #dfdfdf;background-color: #fdfdfd;border-radius: 0.56rem;cursor: pointer;display: inline-block;position: relative;vertical-align: middle;-webkit-user-select: none;user-select: none;-webkit-box-sizing: content-box;box-sizing: content-box;border-color: #dfdfdf;-webkit-box-shadow: #dfdfdf 0 0 0 0 inset;box-shadow: #dfdfdf 0 0 0 0 inset;-webkit-transition: border .4s,-webkit-box-shadow .4s;transition: border .4s,box-shadow .4s;-webkit-background-clip: content-box;background-clip: content-box;}
+.ui-switch input:after {content: '';width: 0.56rem;height: 0.56rem;position: absolute;top: 1px;left: 0;border-radius: 100%;background-color: #fff;-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);box-shadow: 0 1px 3px rgba(0,0,0,.4);-webkit-transition: left .2s;transition: left .2s;}
+.ui-switch input:checked:before {border-color: #3cc;-webkit-box-shadow: #3cc 0 0 0 16px inset;box-shadow: #3cc 0 0 0 16px inset;background-color: #3cc;transition: border .4s,box-shadow .4s,background-color 1.2s;-webkit-transition: border .4s,-webkit-box-shadow .4s,background-color 1.2s;background-color: #3cc;}
+.ui-switch input:checked:after {left: 21px;}
+/*pay_success*/
+#pay_success .mt243 section:nth-child(2) p{width: 1.8rem;line-height: 0.8rem;border: 1px solid #3cc;border-radius: 0.1rem;text-align: center;}
+#pay_success .mt243 section:nth-child(2) p:first-child{margin-left: 1.4rem;margin-right: 1.09rem;}
+/*made_form*/
+#made_form .select{width: 4rem;border: 0;background: #fff;display: inline-block;}
+#made_form main section ul{position: absolute;right: 0.24rem;width: 4.44rem;border-radius: 0.1rem;}
+#made_form main section ul li{width:4.2rem;line-height: 0.6rem;background: #fff;padding-left: 0.24rem;}
+#made_form input{margin-bottom: 0.3rem;font-size: 0.32rem;padding: 0.2rem 0;height: 0.5rem;text-indent: 0.5em;}
+#made_form textarea{text-indent: 0.5em;}
+#made_form input.radio{width: 0.3rem;height: 0.3rem}

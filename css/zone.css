@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/*zone*/
+#zone .zone_item{position: absolute;top: 0.8rem;right: 0.24rem;background:#24BFD2;z-index: 999999}
+/*zone_logo*/
+#zone_logo .pl115 li{border-left: 1px dashed #999;}
+#zone_logo .pl115 li p{width: 88%}
+/*zone_angel_form*/
+#zone_angel_form .select{width: 4rem;border: 0;background: #fff;display: inline-block;}
+#zone_angel_form main section ul{position: absolute;right: 0.24rem;width: 4.44rem;border-radius: 0.1rem;}
+#zone_angel_form main section ul li{width:4.2rem;line-height: 0.6rem;background: #fff;padding-left: 0.24rem;}
+#zone_angel_form input{margin-bottom: 0.3rem;font-size: 0.32rem;padding: 0.2rem 0;height: 0.5rem;text-indent: 0.5em;}
+#zone_angel_form textarea{text-indent: 0.5em;}
+/*zone_unity*/
+#zone_unity ul{background: url(../images/zone/zone_unity.png);background-size: 100%;height: 2rem}
+#zone_unity ul li{display: inline-block;width: 1.56rem;margin-left: 0.24rem;}
+#zone_unity ul li:last-child{margin-right: 0}
+#zone_unity ul li img{height: auto;width: 1.56rem}
+#zone_unity ul li p{margin-top: -0.6rem;position: relative}
+/*angel_infor*/
+#angel_infor .nowrap{overflow-x: scroll;overflow-y: hidden;}
+#angel_infor nav p{width: 0.9rem;margin-left: 0.3rem;margin-right: 0.23rem;text-align: center;line-height: 0.8rem;}
+#angel_infor li h1{background: #C7EEF3;}
+#angel_infor li div p.lh36{width: 4.7rem;}
+/*angel_informain*/
+#angel_informain .btn{background: #C7F5F2!important}
+#angel_informain footer,#angel_informain .p30_24,#angel_informaincomm footer{background: #F0F7F7;}
+#angel_informain footer input,#angel_informaincomm footer input{width: 4rem;line-height: 0.6rem;display: inline-block;border-radius: 0.6rem;padding-left:0.24rem; }
+#angel_informain .footer,#angel_informaincomm .footer{position: fixed;bottom: 0;}
+#angel_informain .footer li,#angel_informaincomm .footer li{padding-top: 0.7rem;text-align: center;display: inline-block;}
+#angel_informain .footer li:nth-child(1),#angel_informaincomm .footer li:nth-child(1){padding-left: 0.8rem;padding-right: 0.6rem;}
+#angel_informain .footer li:nth-child(2),#angel_informaincomm .footer li:nth-child(2){padding:0 0.6rem;}
+#angel_informain .footer li:nth-child(3),#angel_informaincomm .footer li:nth-child(3){padding-right: 0.8rem;padding-left: 0.6rem}
+#angel_informain .footer li img,#angel_informaincomm .footer li img{height: 1.04rem;margin-bottom: 0.33rem}
+#angel_informain .footer a,#angel_informaincomm .footer a{width: 2rem;line-height: 0.8rem;text-align: center;border-radius: 0.8rem;border:1px solid  #333;}
+.radius30{border-radius: 0.3rem}
+#angel_informain .angel_informainbtn{width: 2rem;border-radius: 0.8rem;border: 2px solid #ccc;height: 0.8rem;margin: 0 auto}
+#angel_informain .p30_24{position: fixed;bottom: 0;z-index: 99999;width: 93.5%}

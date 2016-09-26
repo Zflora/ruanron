@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/my.css" rel="stylesheet" type="text/css">
+<title>ru@n软融</title>
+</head>
+<body id="my_spending" class="bgwh">
+    <!-- header -->
+    <header class="bg24BFD2">
+        <a class="header_l" onclick="javascript:history.back(-1); "><img src="images/index/header_l.png" alt=""></a>
+        <span class="f40">我的消费</span>        
+    </header>
+    <!-- header_end -->
+    <main class="mt88">
+        <ul class="my_spendingheader tc">
+            <li class="dib lh60 mt88">
+                <p class="f50 wh" id="mouth"></p>
+                <p class="f30 wh" id="year"></p>                
+            </li>
+            <li class="dib ml255 lh60">
+                <p class="f50 wh"><span class="f32">¥</span>10363</p>
+                <p class="f30 wh">总花费</p>
+            </li>
+        </ul>
+        <ul >
+            <li class="bgwh bbc p24">
+                <div class="dib">
+                    <p class="f32 mb20">先知’电商类app</p>
+                    <p class="g9 f28">2016.06.17</p>
+                </div>
+                <div class="dib r">
+                    <p class="f28 mt20">¥<span class="f40">4280</span></p>                    
+                </div>
+            </li>
+            <li class="bgwh bbc p24">
+                <div class="dib">
+                    <p class="f32 mb20">先知’电商类app</p>
+                    <p class="g9 f28">2016.06.17</p>
+                </div>
+                <div class="dib r">
+                    <p class="f28 mt20">¥<span class="f40">4280</span></p>                    
+                </div>
+            </li>
+            <li class="bgwh bbc p24">
+                <div class="dib">
+                    <p class="f32 mb20">先知’电商类app</p>
+                    <p class="g9 f28">2016.06.17</p>
+                </div>
+                <div class="dib r">
+                    <p class="f28 mt20">¥<span class="f40">4280</span></p>                    
+                </div>
+            </li>
+            <li class="bgwh bbc p24">
+                <div class="dib">
+                    <p class="f32 mb20">先知’电商类app</p>
+                    <p class="g9 f28">2016.06.17</p>
+                </div>
+                <div class="dib r">
+                    <p class="f28 mt20">¥<span class="f40">4280</span></p>                    
+                </div>
+            </li>
+        </ul>
+    </main>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+$(function(){
+    var myDate = new Date();
+    var year=myDate.getFullYear();    //获取完整的年份(4位,1970-????)
+    var mouth=myDate.getMonth();       //获取当前月份(0-11,0代表1月)
+    var mouthE=['January','February','March','April','May','June','July','August','September','October','November','December'];
+    $("#year").text(year);
+    $("#mouth").text(mouthE[mouth]);
+})
+</script>
+</html>

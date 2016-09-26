@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<title>ru@n软融</title>
+</head>
+<body id="firmorder_billnews" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <a class="header_l" onclick="javascript:history.back(-1); "><img src="images/index/header_l.png" alt=""></a>
+        <span class="f40">发票信息</span>
+        <a class="header_r f32">删除</a>
+    </header>
+    <!-- header_end -->
+    <aside class="mt110 bgwh">
+        <div class="pl24 pt24">
+            <input class=" w630 f32 dib" value="上海企福集团" type="text" placeholder="企业全称" required>
+            <div class="righticon dib mt5">
+                <i class="dib h30 ml10"><img src="images/del.png" class="h30" alt=""></i>
+            </div>
+            <hr class="mt24">
+        </div>
+        <div class="pl24 pt24">
+            <input class=" w630 f32 dib" value="2114356789345" type="tel" placeholder="税号" required>
+            <div class="righticon dib mt5">
+                <i class="dib h30 ml10"><img src="images/del.png" class="h30" alt=""></i>
+            </div>
+            <hr class="mt24">
+        </div>
+        <div class="pl24 pt24">
+            <input class=" w630 f32 dib" value="招商银行松江分行"  placeholder="开户行名称" type="text" required>
+            <div class="righticon dib mt5">
+                <i class="dib h30 ml10"><img src="images/del.png" class="h30" alt=""></i>
+            </div>
+            <hr class="mt24">
+        </div>
+        <div class="pl24 pt24">
+            <input class=" w630 f32 dib" value="855658010000136756"  placeholder="开户行账号" type="tel" required>
+            <div class="righticon dib mt5">
+                <i class="dib h30 ml10"><img src="images/del.png" class="h30" alt=""></i>
+            </div>
+            <hr class="mt24">
+        </div>
+        <div class="pl24 pt24">
+            <input class=" w630 f32 dib" value="021-6699888" placeholder="固定电话" type="tel" required>
+            <div class="righticon dib mt5">
+                <i class="dib h30 ml10"><img src="images/del.png" class="h30" alt=""></i>
+            </div>
+            <hr class="mt24">
+        </div>
+        <div class="p24">
+            <textarea class=" w630 f32 dib lh36" placeholder="注册地址" required>上海市松江区松江工业园江田东路185号九号楼208室</textarea>
+            <div class="righticon dib mt5">
+                <i class="dib h30 ml10"><img src="images/del.png" class="h30" alt=""></i>
+            </div>
+        </div>
+    </aside>
+    <aside class="mt20 bgwh p30_24">
+        <section class="dib">
+            <p class="f32 g9">默认地址</p>
+            <p class="f32 mt20">注:每次下单都会使用该信息</p>
+        </section>
+        <div class="dib r">
+            <label for="#" class="ui-switch">
+                <input type="checkbox" />
+            </label>
+        </div>
+    </aside>
+    <section class="tc mb35 mt110" onclick="javascript:window.location.href='firmorder.html','_self'">
+        <a class="f32 wh btn lh80">保存并使用</a>
+    </section>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+$(function(){
+    var i=0;
+    $(".righticon").click(function(){
+        i=$(".righticon").index($(this));
+        $("input").eq(i).val("");
+        $("textarea").html('');
+    })
+})
+</script>
+</html>

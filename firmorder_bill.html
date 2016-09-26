@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<title>ru@n软融</title>
+</head>
+<body id="firmorder_bill" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <a class="header_l" onclick="javascript:history.back(-1); "><img src="images/index/header_l.png" alt=""></a>
+        <span class="f40">发票信息</span>
+    </header>
+    <!-- header_end -->
+    <main class="mt88">
+        <ul>
+            <li class="p44_24 bgwh" onclick="javascript:window.location.href='firmorder_billnews.html','_self'">
+                <input type="radio" class="radio_input radio mt-110">
+                <div class="dib w531 ml24">
+                    <p class="f32 mb24">上海企福集团 <span class="f24 g3cc">[默认信息]</span></p>
+                    <p class="f24 g9 lh36">上海市松江区松江工业园江田东路185号九号楼 208室</p>
+                </div>
+                <p class="dib f24 g9 top">编辑</p>
+            </li>
+            <hr>
+            <li class="p44_24 bgwh" onclick="javascript:window.location.href='firmorder_billnews.html','_self'">
+                <input type="radio" class="radio_input radio mt-110">
+                <div class="dib w531 ml24">
+                    <p class="f32 mb24">上海企福集团 <span class="f24 g3cc">[默认信息]</span></p>
+                    <p class="f24 g9 lh36">上海市松江区松江工业园江田东路185号九号楼 208室</p>
+                </div>
+                <p class="dib f24 g9 top">编辑</p>
+            </li>
+            <hr>
+            <li class="p44_24 bgwh" onclick="javascript:window.location.href='firmorder_billnews.html','_self'">
+                <input type="radio" class="radio_input radio mt-110">
+                <div class="dib w531 ml24">
+                    <p class="f32 mb24">上海企福集团 <span class="f24 g3cc">[默认信息]</span></p>
+                    <p class="f24 g9 lh36">上海市松江区松江工业园江田东路185号九号楼 208室</p>
+                </div>
+                <p class="dib f24 g9 top">编辑</p>
+            </li>
+            <hr>
+        </ul>
+    </main>
+    <footer class="tc bg22C7BC" onclick="javascript:window.location.href='firmorder_newbill.html','_self'"><p class="f32 wh">新建发票信息</p></footer>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("input[type='radio']").click(function(){ 
+    if($(this).hasClass("radio_on")){ 
+            $(this).removeClass("radio_on"); 
+        }else{ 
+            $(this).addClass("radio_on").parents("li").siblings().find("input").removeClass("radio_on"); 
+        } 
+    })
+})
+</script>
+</html>

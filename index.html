@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<title>ru@n软融</title>
+</head>
+<body id="index" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <span class="f40">首页</span>
+        <a class="header_r" onclick="javascript:window.location.href='my_news.html','_self'"><img src="images/index/index_news.png" alt=""></a> 
+    </header>
+    <!-- header_end -->
+    <!-- banner -->
+    <aside class="main_visual mb20 mt88">
+        <div class="main_image">
+            <ul>                    
+                <li><span ><img src="images/banner (1).png" alt="" /></span></li>
+                <li><span ><img src="images/banner (2).png" alt="" /></span></li>
+                <li><span ><img src="images/banner (3).png" alt="" /></span></li>
+            </ul>
+            <a href="javascript:;" id="btn_prev"></a>
+            <a href="javascript:;" id="btn_next"></a>
+        </div>
+        <div class="flicking_con">
+            <div class="flicking_inner">
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+        </div>
+    </aside>
+    <!-- banner_end -->
+    <!-- nav -->
+    <nav class="p0_24">
+        <section class="bbc" onclick="javascript:window.location.href='class.html','_self'">
+            <img src="images/index/class.png" class="w110h110 p24_0">
+            <p class="f28">分类</p>
+        </section>
+        <section  class="bbc" onclick="javascript:window.location.href='industry.html','_self'">
+            <img src="images/index/industry.png" class="w110h110 p24_0">
+            <p class="f28">行业</p>
+        </section>
+        <section  class="bbc" onclick="javascript:window.location.href='stage.html','_self'">
+            <img src="images/index/stage.png" class="w110h110 p24_0">
+            <p class="f28">阶段</p>
+        </section>
+        <section  class="bbc" onclick="javascript:window.location.href='price.html','_self'">
+            <img src="images/index/price.png" class="w110h110 p24_0">
+            <p class="f28">价格</p>
+        </section>
+    </nav>
+    <!-- nav_end -->
+    <!-- hot -->
+    <aside class="mt40 p0_24">
+        <p class="f32 mb20">热门产品</p>
+        <section class="radius20 bgwh bbc ovh mb30" onclick="javascript:window.location.href='orders_mainmore.html','_self'">
+            <div class="h340 mb22"><img src="images/banner (1).png" alt="" class="h340"></div>
+            <div class="dib ml20">
+                <p class="f30 mb22">司机瑞’汽车类APP</p>
+                <p class="f24 g9 mb24">蚁行者<span class="f18">开发团队作品</span></p>
+            </div>
+            <div class="dib tc index_hot r"><p class="f32 wh radius10 bgE8323B">销售中</p></div>
+        </section>
+        <section class="radius20 bgwh bbc ovh mb30" onclick="javascript:window.location.href='orders_mainmore_salebefore.html','_self'">
+            <div class="h340 mb22"><img src="images/banner (1).png" alt="" class="h340"></div>
+            <div class="dib ml20">
+                <p class="f30 mb22">司机瑞’汽车类APP</p>
+                <p class="f24 g9 mb24">蚁行者<span class="f18">开发团队作品</span></p>
+            </div>
+            <div class="dib tc index_hot r"><p class="f32 wh bgE9A442 radius10">预售中</p></div>
+        </section>
+        <section class="radius20 bgwh bbc ovh mb30" onclick="javascript:window.location.href='orders_mainmore_saleover.html','_self'">
+            <div class="h340 mb22"><img src="images/banner (1).png" alt="" class="h340"></div>
+            <div class="dib ml20">
+                <p class="f30 mb22">司机瑞’汽车类APP</p>
+                <p class="f24 g9 mb24">蚁行者<span class="f18">开发团队作品</span></p>
+            </div>
+            <div class="dib tc index_hot r"><p class="f32 wh bg9 radius10">已停售</p></div>
+        </section>
+    </aside>
+    <!-- hot_end -->
+    <!-- footer -->
+    <footer>
+        <ul>
+            <li onclick="javascript:window.location.href='index.html','_self'">
+                <div class="index_on"></div>
+                <p class="f24 g3cc">首页</p>
+            </li>
+            <li onclick="javascript:window.location.href='plan.html','_self'">
+                <div class="tesk"></div>
+                <p class="f24">方案</p>
+            </li>
+            <li onclick="javascript:window.location.href='zone.html','_self'">
+                <div class="play"></div>
+                <p class="f24">创客</p>
+            </li>
+            <li onclick="javascript:window.location.href='my.html','_self'">
+                <div class="my"></div>
+                <p class="f24">我的</p>
+            </li>
+        </ul>
+    </footer>
+    <!-- footer_end -->
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!-- banner -->
+<script type="text/javascript" src="js/jquery.event.drag-1.5.min.js"></script>
+<script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+<script type="text/javascript">
+$(function(){
+    //轮播开始
+    $dragBln = false;
+    $(".main_image").touchSlider({
+        flexible : true,
+        speed : 200,
+        btn_prev : $("#btn_prev"),
+        btn_next : $("#btn_next"),
+        paging : $(".flicking_con a"),
+        counter : function (e) {
+            $(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+        }
+    });
+    $(".main_image").bind("mousedown", function() {
+        $dragBln = false;
+    })
+    $(".main_image").bind("dragstart", function() {
+        $dragBln = true;
+    })
+    $(".main_image a").click(function() {
+        if($dragBln) {
+            return false;
+        }
+    })
+    timer = setInterval(function() { $("#btn_next").click();}, 3000);
+    $(".main_visual").hover(function() {
+        clearInterval(timer);
+    }, function() {
+        timer = setInterval(function() { $("#btn_next").click();}, 3000);
+    })
+    $(".main_image").bind("touchstart", function() {
+        clearInterval(timer);
+    }).bind("touchend", function() {
+        timer = setInterval(function() { $("#btn_next").click();}, 3000);
+    })
+    //轮播结束
+})
+</script>
+</html>

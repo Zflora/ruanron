@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<title>ru@n软融</title>
+</head>
+<body id="firmorder_mail" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <a class="header_l" onclick="javascript:history.back(-1); "><img src="images/index/header_l.png" alt=""></a>
+        <span class="f40">邮箱</span>
+        <a class="header_r f32" onclick="javascript:window.location.href='firmorder.html','_self'">保存</a>
+    </header>
+    <!-- header_end -->
+    <aside class="mt110 bgwh">
+        <div class="p24">
+            <input class="f32 dib" placeholder="请输入邮箱" type="text" required>
+            <div class="righticon dib mt5">
+                <i class="dib h30 ml10"><img src="images/del.png" class="h30" alt=""></i>
+            </div>
+        </div>
+    </aside>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+$(function(){
+    $(".righticon").click(function(){
+        $("input").val("");
+    })
+})
+</script>
+</html>

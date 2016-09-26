@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/my.css" rel="stylesheet" type="text/css">
+<title>ru@n软融</title>
+</head>
+<body id="my_setbuilper" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <a class="header_l" onclick="javascript:history.back(-1); "><img src="images/index/header_l.png" alt=""></a>
+        <span class="f40">企业法人</span>
+        <a class="header_r f32" onclick="javascript:history.back(-1); ">保存</a>
+    </header>
+    <!-- header_end -->
+    <main class="mt110 bgwh pl24">
+        <input class="f32 dib pt30 pb30 w630" value="暮雨泽" type="text">
+        <div class="righticon dib mt30">
+            <i class="dib h30 ml10"><img src="images/del.png" class="h30" alt="" class=""></i>
+        </div>    
+    </main>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("i").click(function(){
+        $("input").val("");
+    })
+})
+</script>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/my.css" rel="stylesheet" type="text/css">
+<title>ru@n软融</title>
+</head>
+<body id="my_inforsax" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <a class="header_l" onclick="javascript:history.back(-1); "><img src="images/index/header_l.png" alt=""></a>
+        <span class="f40">性别</span>
+        <a class="header_r f32" onclick="javascript:history.back(-1); ">保存</a>
+    </header>
+    <!-- header_end -->
+    <main class="mt110 bgwh pl24">
+        <ul>
+            <li>
+                <label for="radio" class="dib">
+                    <input class="f32 dib lh90 w630" value="男" type="text" readonly>
+                    <input type="radio" id="radio" class="radio radio_input radio_on">
+                </label>                
+                <hr>
+            </li>
+            <li>
+                <label for="radio1" class="dib">
+                    <input class="f32 dib lh90 w630" value="女" type="text" readonly>
+                    <input type="radio" class="radio radio_input" id="radio1">
+                </label>
+                
+                <hr>
+            </li>
+            <li>
+                <input class="f32 dib lh90 w630" value="保密" type="text" readonly>
+                <input type="radio" class="radio radio_input">
+            </li>
+        </ul>
+            
+    </main>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("input[type='radio']").click(function(){ 
+        if($(this).hasClass("radio_on")){  
+                $(this).removeClass("radio_on"); 
+            }else{                
+                $(this).addClass("radio_on").parents("li").siblings().find("input").removeClass("radio_on"); 
+            } 
+    })
+})
+</script>
+</html>

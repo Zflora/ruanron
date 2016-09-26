@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/my.css" rel="stylesheet" type="text/css">
+<title>ru@n软融</title>
+</head>
+<body id="my_view" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <a class="header_l" onclick="javascript:history.back(-1); "><img src="images/index/header_l.png" alt=""></a>
+        <span class="f40">意见反馈</span>
+    </header>
+    <!-- header_end -->
+   <main class="mt128 tc">
+        <img src="images/my/logo.png" alt="" class="h80">
+       <section class="p0_24 mb60 mt88"><p class="f32 tc lh60">我们的办公室在上海，地址是松江区江田东路185号九号楼208，有空过来打声招呼吧！</p></section>
+       <p class="f30 mt70">觉得太远了，那就向我们提交在线意见反馈吧！</p>
+       <section class="p0_24 f32 mb44 mt40">
+            <input type="tel" class="pl5 bgwh radius10 pct99" placeholder="联系方式" maxlength="11"> 
+            <textarea name="" class="pct99 pl5 bgwh radius10 lh60 mt40 pt24" cols="30" rows="4" placeholder="请在此描述你遇到的问题或向我提出宝贵的意见或建议"></textarea>
+       </section>
+       <section class="tc mb35 mt70" onclick="javascript:history.back(-1); ">
+            <a class="f32 wh btn lh80">提交</a>
+        </section>
+   </main>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("input[type='radio']").click(function(){ 
+    if($(this).hasClass("radio_on")){ 
+            $(this).removeClass("radio_on"); 
+        }else{ 
+            $(this).addClass("radio_on"); 
+        } 
+    })
+})
+</script>
+</html>

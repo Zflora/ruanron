@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/zone.css" rel="stylesheet" type="text/css">
+<title>ru@n软融</title>
+</head>
+<body id="zone" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <span class="f40">创客空间</span>
+        <a class="header_r mr60" onclick="javascript:window.location.href='my_news.html','_self'"><img src="images/index/index_news.png" alt=""></a> 
+        <a class="header_r" id="zone_item"><img src="images/zone/add.png" alt=""></a> 
+    </header>
+    <!-- header_end -->
+    <main class="mt88 ">
+        <aside class="">
+            <img src="images/zone/zone.png" alt="" class="h600 pct99">
+        </aside>
+        <aside>
+            <section class="mt-30" align="center" onclick="javascript:window.location.href='zone_angel.html','_self'">
+                <div ><img src="images/zone/love.png" class="h260 mb20"></div>
+                <p class="f40">天使贷</p>
+            </section>
+            <section class="mt-110 dib pl24" onclick="javascript:window.location.href='zone_technology.html','_self'">
+                <div ><img src="images/zone/mouse.png" class="h200 mb20"></div>
+                <p class="f40 tc">技术投资</p>
+            </section>
+            <section class="mt-110 dib r pr24" onclick="javascript:window.location.href='zone_unity.html','_self'">
+                <div ><img src="images/zone/dynamic-.png" class="h200 mb20"></div>
+                <p class="f40 tc">联合投资</p>
+            </section>
+        </aside>
+
+    </main>
+    <!-- footer -->
+    <footer class="mt40">
+        <ul>
+            <li onclick="javascript:window.location.href='index.html','_self'">
+                <div class="index"></div>
+                <p class="f24 ">首页</p>
+            </li>
+            <li onclick="javascript:window.location.href='plan.html','_self'">
+                <div class="tesk"></div>
+                <p class="f24">方案</p>
+            </li>
+            <li onclick="javascript:window.location.href='zone.html','_self'">
+                <div class="play_on"></div>
+                <p class="f24 g3cc">创客</p>
+            </li>
+            <li onclick="javascript:window.location.href='my.html','_self'">
+                <div class="my"></div>
+                <p class="f24">我的</p>
+            </li>
+        </ul>
+    </footer>
+    <!-- footer_end -->
+    <!-- 弹框 -->
+    <aside class="zone_item radius10 dn">
+        <ul>
+            <li class="p24" onclick="javascript:window.location.href='essential_services.html','_self'">
+                <img src="images/zone/service.png" alt="" class="h30 mr24">
+                <p class="dib f30 wh vt">基础服务</p>
+            </li>
+            <li class="p24" onclick="javascript:window.location.href='angel_infor.html','_self'">
+                <img src="images/zone/chat.png" alt="" class="h30 mr20">
+                <p class="dib f30 wh vt">天使咨讯</p>
+            </li>
+        </ul>
+    </aside>
+    <!-- 弹框结束 -->
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+$(function(){
+    //弹框
+    $("#zone_item").click(function(){
+        $(".zone_item").toggle();
+    })
+})
+</script>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<title>ru@n软融</title>
+</head>
+<body id="firmorder" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <a class="header_l" onclick="fh()"><img src="images/index/header_l.png" alt=""></a>
+        <span class="f40">确认订单</span>
+    </header>
+    <!-- header_end -->
+    <main class="mt88">
+        <aside class="p30_24 bgwh mb30">
+            <img src="images/banner (1).png" alt="" class="dib w280h210 radius10">
+            <section class="dib ml24 v15">
+                <p class="f32 mb24">司厨宝APP</p>
+                <p class="f24 mb24 g9">开发团队：蚁行者</p>
+                <p class="f24 mb24 g9">联系方式：1376666888</p>
+                <p class="f24 g9">活动价：<span class="f40 g3cc">7230</span></p>
+            </section>
+        </aside>
+        <aside class="bgwh mb30">
+            <p class="f32 p24">购买人信息</p>
+            <hr>
+            <div class="p24" onclick="javascript:window.location.href='firmorder_name.html','_self'">
+                <p class="f32 dib">姓名</p>
+                <div class="righticon dib">
+                    <p class="f30 g9 dib v2">暮雨泽</p>
+                    <i class="dib h30 ml10"><img src="images/right.png" class="h30" alt=""></i>
+                </div>
+            </div>
+            <hr>
+            <div class="p24" onclick="javascript:window.location.href='firmorder_tel.html','_self'">
+                <p class="f32 dib">手机号</p>
+                <div class="righticon dib">
+                    <p class="f30 g9 dib v2">13111112222</p>
+                    <i class="dib h30 ml10"><img src="images/right.png" class="h30" alt=""></i>
+                </div>
+            </div>
+            <hr>
+            <div class="p24" onclick="javascript:window.location.href='firmorder_mail.html','_self'">
+                <p class="f32 dib">邮箱</p>
+                <div class="righticon dib">
+                    <p class="f30 g9 dib v2">UIchian@126.com</p>
+                    <i class="dib h30 ml10"><img src="images/right.png" class="h30" alt=""></i>
+                </div>
+            </div>
+        </aside>
+        <aside class="bgwh mb60" onclick="javascript:window.location.href='firmorder_bill.html','_self'">
+            <div class="p24">
+                <p class="f32 dib">发票</p>
+                <div class="righticon dib">
+                    <p class="f30 g9 dib v2">上海企福集团</p>
+                    <i class="dib h30 ml10"><img src="images/right.png" class="h30" alt=""></i>
+                </div>
+            </div>
+        </aside>
+        <aside class="f24 g3cc pl24">温馨提示：所有产品一将售出，我们将马上停售</aside>
+    </main>
+    <footer>
+        <p class="dib f32 tc">订单总金额：<span class="f36 g3cc">7230</span></p>
+        <p class="dib f32 tc wh" onclick="javascript:window.location.href='pay_success.html','_self'">立即下单</p>
+    </footer>
+    
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript">
+    function fh(){
+    window.location.href=$.cookie("use");
+}
+
+</script>
+</html>

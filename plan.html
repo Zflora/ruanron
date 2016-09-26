@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<title>ru@n软融</title>
+</head>
+<body id="plan" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <span class="f40">方案</span>
+        <a class="header_r" onclick="javascript:window.location.href='my_news.html','_self'"><img src="images/index/index_news.png" alt=""></a> 
+    </header>
+    <!-- header_end -->
+    <!-- banner -->
+    <aside class="main_visual mb20 mt88">
+        <div class="main_image">
+            <ul>                    
+                <li><span ><img src="images/banner (1).png" alt="" /></span></li>
+                <li><span ><img src="images/banner (2).png" alt="" /></span></li>
+                <li><span ><img src="images/banner (3).png" alt="" /></span></li>
+            </ul>
+            <a href="javascript:;" id="btn_prev"></a>
+            <a href="javascript:;" id="btn_next"></a>
+        </div>
+        <div class="flicking_con">
+            <div class="flicking_inner">
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+        </div>
+    </aside>
+    <!-- banner_end -->
+    <!-- 人气推荐 -->
+    <aside class="p0_24 mb20">
+        <p class="f32 p30 bgwh pb0 radius20t">人气推荐</p>
+        <ul class="p20_30 bgwh bbc radius20b">
+            <li class="dib mr50" onclick="javascript:window.location.href='plan_main.html','_self'">
+                <img src="images/banner (1).png" alt="" class="w180h180 radius10 mb10">
+                <p class="f20 g9 nowrap ovh w170">‘长治宝’电商类APP</p>
+            </li>
+            <li class="dib mr50" onclick="javascript:window.location.href='plan_main.html','_self'">
+                <img src="images/banner (1).png" alt="" class="w180h180 radius10 mb10">
+                <p class="f20 g9 nowrap ovh w170">‘长治宝’电商类APP</p>
+            </li>
+            <li class="dib" onclick="javascript:window.location.href='plan_main.html','_self'">
+                <img src="images/banner (1).png" alt="" class="w180h180 radius10 mb10">
+                <p class="f20 g9 nowrap ovh w170">‘长治宝’电商类APP</p>
+            </li>
+        </ul>
+    </aside>
+    <!-- 人气推荐结束 -->
+    <aside class="p0_24">
+        <section class="mb20" onclick="javascript:window.location.href='plan_item.html','_self'">
+            <img src="images/banner (2).png" alt="" class="h280 radius10 pct99">
+            <div class="pct99 h280 opa5 bg0 mt-280 radius10"></div>
+            <div class="wh mt-180 abs ml60">
+                <p class="f36 mb24">电商类</p>
+                <p class="f26">电商品牌如何实现全网营销?</p>
+            </div>
+        </section>
+        <section class="mb20" onclick="javascript:window.location.href='plan_item.html','_self'">
+            <img src="images/banner (2).png" alt="" class="h280 radius10 pct99">
+            <div class="pct99 h280 opa5 bg0 mt-280 radius10"></div>
+            <div class="wh mt-180 abs ml60">
+                <p class="f36 mb24">社交类</p>
+                <p class="f26">社交App能为用户带来什么？</p>
+            </div>
+        </section>
+        <section class="mb20" onclick="javascript:window.location.href='plan_item.html','_self'">
+            <img src="images/banner (2).png" alt="" class="h280 radius10 pct99">
+            <div class="pct99 h280 opa5 bg0 mt-280 radius10"></div>
+            <div class="wh mt-180 abs ml60">
+                <p class="f36 mb24">餐饮类</p>
+                <p class="f26">实体店商转向移动网店已然成为一种潮流。</p>
+            </div>
+        </section>
+    </aside>
+    <!-- footer -->
+    <footer>
+        <ul>
+            <li onclick="javascript:window.location.href='index.html','_self'">
+                <div class="index"></div>
+                <p class="f24 ">首页</p>
+            </li>
+            <li onclick="javascript:window.location.href='plan.html','_self'">
+                <div class="tesk_on"></div>
+                <p class="f24 g3cc">方案</p>
+            </li>
+            <li onclick="javascript:window.location.href='zone.html','_self'">
+                <div class="play"></div>
+                <p class="f24">创客</p>
+            </li>
+            <li onclick="javascript:window.location.href='my.html','_self'">
+                <div class="my"></div>
+                <p class="f24">我的</p>
+            </li>
+        </ul>
+    </footer>
+    <!-- footer_end -->
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!-- banner -->
+<script type="text/javascript" src="js/jquery.event.drag-1.5.min.js"></script>
+<script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+<script type="text/javascript">
+$(function(){
+    //轮播开始
+    $dragBln = false;
+    $(".main_image").touchSlider({
+        flexible : true,
+        speed : 200,
+        btn_prev : $("#btn_prev"),
+        btn_next : $("#btn_next"),
+        paging : $(".flicking_con a"),
+        counter : function (e) {
+            $(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+        }
+    });
+    $(".main_image").bind("mousedown", function() {
+        $dragBln = false;
+    })
+    $(".main_image").bind("dragstart", function() {
+        $dragBln = true;
+    })
+    $(".main_image a").click(function() {
+        if($dragBln) {
+            return false;
+        }
+    })
+    timer = setInterval(function() { $("#btn_next").click();}, 3000);
+    $(".main_visual").hover(function() {
+        clearInterval(timer);
+    }, function() {
+        timer = setInterval(function() { $("#btn_next").click();}, 3000);
+    })
+    $(".main_image").bind("touchstart", function() {
+        clearInterval(timer);
+    }).bind("touchend", function() {
+        timer = setInterval(function() { $("#btn_next").click();}, 3000);
+    })
+    //轮播结束
+})
+</script>
+</html>

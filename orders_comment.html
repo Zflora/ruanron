@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<!-- 预览 -->
+<link rel="stylesheet" href="css/zyUpload.css" type="text/css">
+<title>ru@n软融</title>
+</head>
+<body id="orders_comment">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <a class="header_l" onclick="javascript:history.back(-1); "><img src="images/index/header_l.png" alt=""></a>
+        <span class="f40">评论</span>
+    </header>
+    <!-- header_end -->
+    <main class="mt88">
+        <p class="f30 bgwh pl24 pt50 pb10">您对于我们的产品感觉</p>
+        <ul>
+            <li class="dib p60_0">
+                <p class="f32 dib v15">非常棒</p>
+                <img src="images/good.png" alt="">
+            </li>
+            <li class="dib p60_0">
+                <p class="f32 dib v15">待提高</p>
+                <img src="images/nogood.png" alt="">
+            </li>
+        </ul>
+        <textarea class="f30 lh60 p30 pct92 mb20" id="" rows="4" placeholder="对于我们的产品您有什么好的建议，请写下来告诉我们吧。"></textarea>
+        <div id="demo" class="demo bgwh"></div>
+        <section class="tc mb35 bgwh" onclick="javascript:window.location.href='orders_mainmore.html','_self'">
+            <a class="f36 wh btn h80">发表</a>
+        </section>
+    </main>    
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!-- 预览 -->
+<script type="text/javascript" src="js/zyFile.js"></script>
+<script type="text/javascript" src="js/zyUpload.js"></script>
+<script type="text/javascript">
+$(function(){
+    // 初始化插件
+    $("#demo").zyUpload({
+    //  width            :   "650px",                  宽度
+    //  height           :   "400px",                  宽度
+        itemWidth        :   "120px",                 // 文件项的宽度
+        itemHeight       :   "100px",                 // 文件项的高度
+        url              :   "/upload/UploadAction",  // 上传文件的路径
+        multiple         :   true,                    // 是否可以多个文件上传
+        dragDrop         :   true,                    // 是否可以拖动上传文件
+        del              :   true,                    // 是否可以删除文件
+        finishDel        :   false,                   // 是否在上传文件完成后删除预览
+        /* 外部获得的回调接口 */
+        onSelect: function(files, allFiles){                    // 选择文件的回调方法
+            console.info("当前选择了以下文件：");
+            console.info(files);
+            console.info("之前没上传的文件：");
+            console.info(allFiles);
+        },
+        onDelete: function(file, surplusFiles){                     // 删除一个文件的回调方法
+            console.info("当前删除了此文件：");
+            console.info(file);
+            console.info("当前剩余的文件：");
+            console.info(surplusFiles);
+        },
+    });
+})
+</script>
+</html>

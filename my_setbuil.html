@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/my.css" rel="stylesheet" type="text/css">
+<title>ru@n软融</title>
+</head>
+<body id="my_setbuil" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <a class="header_l" onclick="javascript:history.back(-1); "><img src="images/index/header_l.png" alt=""></a>
+        <span class="f40">企业认证</span>
+    </header>
+    <!-- header_end -->
+    <main class="mt88 bgwh pt50">
+        <section class="auto radius10 mb60 tc">
+            <label for="up_img" class="dib" id="imgdiv"><img src="images/my/camera.png" alt="" id="imgShow"  class="w"></label>
+            <input type="file" id="up_img" class="dn" />
+        </section>
+        <ul>
+            <li class="pl24 " onclick="javascript:window.location.href='my_setbuilname.html','_self'">
+                <p class="f32 dib lh90">企业名称</p>
+                <input readonly type="text" class="r g9 f30 mt28 tr mr60 " value="上海企福集团">
+                <div class="righticon dib mt30">
+                    <i class="dib h30 ml10"><img src="images/right.png" class="h30" alt="" class=""></i>
+                </div>
+                <hr class="">
+            </li>
+            <li class="pl24 " onclick="javascript:window.location.href='my_setbuilper.html','_self'">
+                <p class="f32 dib lh90">企业法人</p>
+                <input readonly type="text" class="r g9 f30 mt28 tr mr60 " value="暮雨泽">
+                <div class="righticon dib mt30">
+                    <i class="dib h30 ml10"><img src="images/right.png" class="h30" alt="" class=""></i>
+                </div>
+                <hr class="">
+            </li>
+            <li class="pl24 " onclick="javascript:window.location.href='my_setbuilnum.html','_self'">
+                <p class="f32 dib lh90">企业执照编码</p>
+                <input readonly type="text" class="r g9 f30 mt28 tr mr60 " value="126658976866986">
+                <div class="righticon dib mt30">
+                    <i class="dib h30 ml10"><img src="images/right.png" class="h30" alt="" class=""></i>
+                </div>
+                <hr class="">
+            </li>
+            <li class="pl24 " onclick="javascript:window.location.href='my_setbuilarea.html','_self'">
+                <p class="f32 dib lh90">企业地址</p>
+                <input readonly type="text" class="r g9 f30 mt28 tr mr60 " value="上海市松江区...">
+                <div class="righticon dib mt30">
+                    <i class="dib h30 ml10"><img src="images/right.png" class="h30" alt="" class=""></i>
+                </div>
+                <hr class="">
+            </li>
+            <li class="pl24 " onclick="javascript:window.location.href='my_setbuilphone.html','_self'">
+                <p class="f32 dib lh90">联系电话</p>
+                <input readonly type="tel" class="r g9 f30 mt28 tr mr60 " value="021-6699888">
+                <div class="righticon dib mt30">
+                    <i class="dib h30 ml10"><img src="images/right.png" class="h30" alt="" class=""></i>
+                </div>
+            </li>
+        </ul>  
+             
+    </main>
+    <section class="tc mb35 mt128" onclick="javascript:history.back(-1); ">
+        <a class="f32 wh btn lh80">提交</a>
+    </section> 
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!-- 图片预览 -->
+<script type="text/javascript" src="js/uploadPreview.js"></script>
+<script type="text/javascript">
+$(function(){
+    // 图片预览
+    window.onload = function () { 
+            new uploadPreview({ UpBtn: "up_img", DivShow: "imgdiv", ImgShow: "imgShow" });
+        }
+})
+</script>
+</html>
